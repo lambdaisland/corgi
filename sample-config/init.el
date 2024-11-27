@@ -18,10 +18,14 @@
   (use-package corgi-defaults)
 
   ;; UI configuration for that Corgi-feel. This sets up a bunch of packages like
-  ;; Evil, Smartparens, Ivy (minibuffer completion), Swiper (fuzzy search),
-  ;; Projectile (project-aware commands), Aggressive indent, Company
-  ;; (completion).
+  ;; Evil, Smartparens, Aggressive indent, Rainbow parens, expand region etc.
   (use-package corgi-editor)
+
+  ;; Interactive Completion user interface configuration. This sets up
+  ;; a bunch of packages like Ivy (minibuffer completion), Swiper
+  ;; (fuzzy search), Counsel, Projectile (project-aware commands),
+  ;; Company (completion).
+  (use-package corgi-completion-ui)
 
   ;; The few custom commands that we ship with. This includes a few things we
   ;; emulate from Spacemacs, and commands for jumping to the user's init.el
